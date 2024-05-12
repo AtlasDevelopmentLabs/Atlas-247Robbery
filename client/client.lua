@@ -1,5 +1,5 @@
 --------------- 
--- Locals (my favourite 😀) ( not locals LOL )
+-- Main (Need to Optimize 🤓☝️)
 ---------------
 gb_coolDown = 0
 local shops = config.shopcoords
@@ -14,12 +14,7 @@ for i = 1, #shops do
     })
 end
 
-
---------------- 
--- Main Code (need to optimize 🤓☝️)
----------------
-
-function showRobberyPrompt(shopName) -- doesnt need to be a local function ( I know  ̄\_(ツ)_/ ̄  ) 
+function showRobberyPrompt(shopName) 
     lib.showTextUI('[E] - Rob ' .. shopName)
 end
 
