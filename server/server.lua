@@ -24,6 +24,7 @@ AddEventHandler('Atlas:Robbery:DiscordLog', function(closestShopMessage)
         end
     end
     if discordId then
+        local username = 'Atlas-24/7/Robbery'
         local webhookURL = config.webhookURL
         local shop = closestShopMessage
         local embedData = {

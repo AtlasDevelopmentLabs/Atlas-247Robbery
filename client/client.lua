@@ -1,5 +1,5 @@
 --------------- 
--- Locals (my favourite 😀)
+-- Locals (my favourite 😀) ( not locals LOL )
 ---------------
 gb_coolDown = 0
 local shops = config.shopcoords
@@ -19,7 +19,7 @@ end
 -- Main Code (need to optimize 🤓☝️)
 ---------------
 
-local function showRobberyPrompt(shopName)
+function showRobberyPrompt(shopName) -- doesnt need to be a local function ( I know  ̄\_(ツ)_/ ̄  ) 
     lib.showTextUI('[E] - Rob ' .. shopName)
 end
 
@@ -48,7 +48,7 @@ local function performRobbery(shopName)
                 description = 'Silent Alarm Has Been Triggered',
                 type = 'success'
             })
-            local closestShop = getClosestCachedShop()
+            local closestShop = getClosestCachedShop() or 'unknown ( Contact Developers )'
             local closestShopMessage = closestShop.name
             local alarmMessage = 'Silent Alarm Triggered: '.. closestShop.name
             TriggerServerEvent('Atlas:Robbery:SilentAlarm', alarmMessage)
